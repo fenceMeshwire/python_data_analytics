@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# user_activity.py
+# monitor_user_activity.py
 
 # Dependencies
 import os
