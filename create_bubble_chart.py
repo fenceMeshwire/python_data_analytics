@@ -26,13 +26,15 @@ colors = [0.1 * df['Inhabitants'][i] for i in range(len(df))]
 cities = [df['City'][i] for i in range(len(df))]
 
 pop_million = [int(1000000 * df['Inhabitants'][i]) for i in range(len(df))]
+city_legend = [((str(df['City'][i])) + " (" + str(df['Inhabitants'][i]) + "e6)") for i in range(len(df))]
 
 plt.scatter(x, y, c=colors, s=population, alpha=0.3, cmap='viridis')
+
 plt.xlim(round(min(x)) - 2, round(max(x) + 2)) # x_min, x_max
 plt.ylim(round(min(y)) - 2, round(max(y) + 2)) # y_min, y_max
 
 cbar = plt.colorbar(ticks=colors)
-cbar.set_ticklabels(pop_million)
+cbar.set_ticklabels(city_legend)
 
 plt.xlabel("Latitude")
 plt.ylabel("Longitude")
