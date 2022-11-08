@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# create_bubble_chart.py
+# 02_create_bubble_chart.py
 
 # Purpose: Concept for creating a bubble chart
 
